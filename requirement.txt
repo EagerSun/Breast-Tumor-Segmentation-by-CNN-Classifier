@@ -1,0 +1,8 @@
+Tenserflow == 2.3.0
+scikit-learn
+OpenCV
+numpy
+pandas
+PIL
+scikit-image
+matplotlib
