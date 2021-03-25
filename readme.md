@@ -8,7 +8,7 @@ The original dataset applied for training CNN classifier is from source: https:/
 
 In each sub files, two files labeled as 0, and 1 are included in where 0 indicates images inside represents normal tissue and 1 means images insides indicates tumor region. For each image inside with similar shape as 50 * 50* 3, the original coodidate of it and correspond label are attached in the image's name. Based on these inofrmation, the original slide image and correspond mask could be built from the labels of its each portion.
 
-![1][result/fig1.png]
+![1](result/fig1.png)
 
 For the masks for different ID on the right of the subplot, the black region indicates the tumor region in original slide image.
 
@@ -32,7 +32,7 @@ In the end, training/testing dataset were stored in .h5 files for further access
 
 The CNN was built in Keras and structure could be shown as:
 
-![2][result/figmodel.png]
+![2](result/figmodel.png)
 
 The classifier model was structured by two convolutional stacks(Convolutional layer, Maxpooling layer, Dropout layer) and one fully connected stack(Dense layer, Maxpooling layer, Dropout layer).
 
@@ -54,7 +54,7 @@ For both values with similar range [0, 1], if value is close to 1, model's class
 The randomly picked testing cases with slide images on left side and blended mask image(red for predicted, blue for original, purple for overlaid) on right side is shown below:
 
 
-![3][result/figtest.png]
+![3](result/figtest.png)
 
 
 ## Resource
